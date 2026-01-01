@@ -157,12 +157,12 @@
 
         // If already logged in (optional convenience), go directly to search.html
         // Comment this out if your teacher does NOT want auto-redirect.
-        //(function autoRedirectIfLoggedIn() {
-        //  const current = sessionStorage.getItem(CURRENT_USER_KEY);
-        //   if (current) {
-        //       window.location.href = "./search.html";
-        //    }
-        //    })();
+        (function autoRedirectIfLoggedIn() {
+            const current = sessionStorage.getItem(CURRENT_USER_KEY);
+            if (current) {
+                window.location.href = "./search.html";
+            }
+        })();
 
         document.getElementById("loginForm").addEventListener("submit", (e) => {
             e.preventDefault();
