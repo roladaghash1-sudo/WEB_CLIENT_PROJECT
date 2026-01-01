@@ -1,10 +1,11 @@
+```html
 <!doctype html>
-<html lang="he">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Music App – Home</title>
+    <title>Music App - Home</title>
 
     <style>
         body {
@@ -12,95 +13,143 @@
             margin: 0;
             background: #f6f7fb;
             color: #111;
+        }
+
+        header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            padding: 14px 18px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .brand {
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 26px auto;
+            padding: 0 18px 30px;
         }
 
         .card {
             background: #fff;
-            padding: 28px 32px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            max-width: 520px;
-            width: 100%;
-            text-align: center;
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
         }
 
         h1 {
-            margin-top: 0;
-            margin-bottom: 10px;
+            margin: 0 0 10px;
+            font-size: 24px;
         }
 
         .subtitle {
             color: #555;
-            margin-bottom: 24px;
+            margin: 0 0 16px;
+            line-height: 1.6;
         }
 
-        .info {
-            text-align: left;
-            margin-bottom: 24px;
-            line-height: 1.8;
-            font-size: 15px;
+        .reqTitle {
+            font-weight: 900;
+            margin: 18px 0 10px;
+            font-size: 16px;
         }
 
-        .info b {
-            display: inline-block;
-            width: 120px;
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.9;
         }
 
         .links {
-            display: grid;
-            gap: 12px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 16px;
         }
 
         a.btn {
-            display: block;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 10px;
-            font-weight: bold;
             border: 1px solid #111;
             background: #111;
             color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         a.btn.secondary {
             background: #fff;
             color: #111;
+            border: 1px solid #ddd;
         }
 
-        a.btn:hover {
-            opacity: 0.9;
+        .footerHint {
+            margin-top: 14px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <h1>🎵 Music App</h1>
-        <div class="subtitle">Web Client Project – Part A</div>
+    <header>
+        <div class="brand">Music App</div>
+        <div style="color:#666; font-size:13px;">Home (index.html)</div>
+    </header>
 
-        <div class="info">
-            <div><b>Student Name:</b> Rola Daghash</div>
-            <div><b>ID:</b> x</div>
-        </div>
+    <div class="container">
+        <div class="card">
+            <h1>Home Page (index.html)</h1>
+            <p class="subtitle">
+                Welcome to the Music App 🎵<br />
+                From here you can open Login/Register, the GitHub repository, and the live website.
+            </p>
 
-        <div class="links">
-            <a class="btn" href="https://github.com/roladaghash1-sudo/WEB_CLIENT_PROJECT" target="_blank">
-                📁 GitHub Repository
-            </a>
+            <div class="reqTitle">Student Details</div>
+            <ul>
+                <!-- ✅ Replace with your details -->
+                <li><b>Student Name:</b> Rola Daghash</li>
+                <li><b>ID:</b> 000000000</li>
+            </ul>
 
-            <a class="btn secondary" href="https://roladaghash1-sudo.github.io/WEB_CLIENT_PROJECT/">
-                🌐 Live Website (GitHub Pages)
-            </a>
+            <div class="reqTitle">Links</div>
+            <div class="links">
+                <!-- ✅ Replace with your links -->
+                <a class="btn" href="https://github.com/roladaghash1-sudo/WEB_CLIENT_PROJECT" target="_blank"
+                    rel="noopener">
+                    📁 GitHub Repository
+                </a>
 
-            <a class="btn secondary" href="./login.html">
-                🔐 Login / Register
-            </a>
+                <a class="btn secondary" href="https://roladaghash1-sudo.github.io/WEB_CLIENT_PROJECT/" target="_blank"
+                    rel="noopener">
+                    🌐 Live Website (GitHub Pages)
+                </a>
+
+                <a class="btn secondary" href="./login.html">
+                    🔐 Login / Register
+                </a>
+            </div>
+
+            <div class="footerHint">
+                ✅ Tip: After login, your app redirects to <b>search.html</b>.
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+```
